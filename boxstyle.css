@@ -1,0 +1,58 @@
+/* CSS USED TO STYLE BOXES IN THE MEDIA QUERY DEMO */
+
+body{
+    background-color: lightgray;
+}
+
+/* Specify dimensions of all boxes in the page (box will be attached to a class) */
+.box{
+    width: 200px;
+    height: 200px;
+}
+
+/* Will add a greeen background to the box */
+.greenbox{
+    background: green;
+}
+
+.redbox{
+    background: red;
+}
+
+.bluebox{
+    background: blue;
+}
+
+.violetbox{
+    background: violet;
+}
+
+.yellowbox{
+    background: yellow ;
+}
+
+/* use @media handle to implement a media query */
+/* apply specific styling when the media is 600px or smaller */
+@media (max-width: 600px)
+{
+    /* To modify the greenbox */
+    .greenbox{
+        background: orange;
+    }
+
+    /* Display Red Circle */
+    .redbox{
+        border-radius: 50%; /* rounds the edges */
+        border: solid 2px black;
+    }
+
+    .bluebox{
+        transform: rotate(360deg); /*make it spin 360 degrees */
+        transition: transform 0.7s ease-in; /* smooth animation - take 0.7 seconds */
+    }
+
+    .violetbox{
+        display: none; 
+    }
+
+}
